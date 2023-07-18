@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Products</title>
+    <style>.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+</style>
+
 </head>
 <body>
+<h1>products::::::::::</h1>
+<img src="{{url_for('static',filename='images.png')}}">
+<p><button><a href="/cart">Add to Cart</a></button></p>
+<p class="price">$25</p>
 
+<p>home </p>
+<img src="{{url_for('static',filename='images.jpeg')}}">
+<p><button><a href="/cart">Add to Cart</a></button></p>
+<p class="price">$230</p>
+
+
+<p>amazing </p>
+<img src="{{url_for('static',filename='download.jpeg')}}">
+<p><button><a href="/cart">Add to Cart</a></button></p>
+<p class="price">'$7000(old is gold)'</p>
+<h1>cool for old people</h1>
+<h2><a href="/">go to home</h2>
+<h2><a href="/cart">go to cart</h2>
 </body>
 </html>
